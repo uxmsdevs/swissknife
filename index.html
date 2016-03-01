@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Decimal, Hexadecimal, Binary, Octal Converter</title>
+    <meta charset="UTF-8" />
+
+    <style type="text/css">
+        input {
+            color: #000066;
+            background-color: #EBE2D3;
+        }
+    </style>
+
+    <script type="text/javascript" src="swissknife.js"></script>
+</head>
+<body>
+    <form name="convert">
+        <table>
+            <tr>
+                <td align="right">
+                    <span class="info">Decimal:</span>
+                </td>
+                <td>
+                    <input type="text" maxlength="30" size="90" name="deci" id="deci" onkeyup="dconvert()" onkeypress="return dncheck(event, deci)" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <span class="info">Binary:</span>
+                </td>
+                <td>
+                    <input type="text" maxlength="30" size="90" name="bin" id="bin" onkeyup="bconvert(this.value)" onkeypress="return bncheck(event, bin)" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <span class="info">Octal:</span>
+                </td>
+                <td>
+                    <input type="text" maxlength="30" size="90" name="oct" id="oct" onkeyup="oconvert(this.value)" onkeypress="return oncheck(event, oct)" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <span class="info">Hexadecimal:</span>
+                </td>
+                <td>
+                    <input type="text" maxlength="30" size="90" name="hdeci" id="hdeci" onkeyup="hconvert(this.value)" onkeypress="return hncheck(event)" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
